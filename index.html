@@ -1,0 +1,175 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neil Stewart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Google Sans Flex', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 2rem auto;
+            background: white;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .section-title {
+            color: #004b87;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            font-weight: 700;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 640px) {
+            .resume-container {
+                margin: 0;
+                border-radius: 0;
+            }
+            .job-header {
+                flex-direction: column;
+            }
+        }
+
+        a {
+            color: #004b87;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #2563eb;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <div class="resume-container p-8 sm:p-12">
+        <!-- Header -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl font-bold tracking-tight text-gray-900 mb-2">NEIL STEWART</h1>
+            <div class="text-gray-600 space-y-1 sm:space-y-0 sm:space-x-4 flex flex-col sm:flex-row justify-center items-center">
+                <span>131 Lily Pond St. Ottawa, ON K2M 0J3</span>
+                <span class="hidden sm:inline">•</span>
+                <span>(343) 254-7827</span>
+                <span class="hidden sm:inline">•</span>
+                <a href="mailto:neil.stewart.737@gmail.com">neil.stewart.737@gmail.com</a>
+            </div>
+        </header>
+
+        <!-- Summary -->
+        <section class="mb-8">
+            <h2 class="section-title text-lg">Summary of Qualifications</h2>
+            <ul class="list-disc ml-5 space-y-2 text-gray-700">
+                <li><strong>Dedicated Student:</strong> Grade 11 student at A.Y. Jackson with a strong work ethic and experience in community service and youth facilitation.</li>
+                <li><strong>Customer Service Oriented:</strong> Proven ability to communicate persuasively and professionally with the public through fundraising and volunteer roles.</li>
+                <li><strong>Safety-Conscious:</strong> Certified in Standard First Aid and CPR Level C; committed to maintaining a safe environment for customers and colleagues.</li>
+                <li><strong>Technical & Mathematical Aptitude:</strong> Quick mental math skills and tech fluency, ensuring accuracy in product scanning and inventory tasks.</li>
+            </ul>
+        </section>
+
+        <!-- Experience -->
+        <section class="mb-8">
+            <h2 class="section-title text-lg">Experience</h2>
+
+            <div class="mb-6">
+                <div class="job-header">
+                    <h3 class="font-bold text-gray-900 text-lg">University of Ottawa (uOttawa)</h3>
+                    <span class="text-gray-500 italic">July 2025 – August 2025</span>
+                </div>
+                <p class="text-gray-600 italic mb-2">Summer Camp Volunteer | Ottawa, ON</p>
+                <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                    <li>Facilitated engaging activities for children aged 6–12, ensuring an organized and supportive environment.</li>
+                    <li>Managed group dynamics and maintained high mobility, mirroring the physical requirements of a retail floor.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <div class="job-header">
+                    <h3 class="font-bold text-gray-900 text-lg">Kanata Food Cupboard</h3>
+                    <span class="text-gray-500 italic">May 2025 – June 2025</span>
+                </div>
+                <p class="text-gray-600 italic mb-2">Volunteer | Ottawa, ON</p>
+                <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                    <li>Secured $200 in donations through persuasive communication and local community engagement.</li>
+                    <li>Represented a local organization with professionalism, demonstrating skills needed for customer resolution.</li>
+                </ul>
+            </div>
+
+            <div class="mb-6">
+                <div class="job-header">
+                    <h3 class="font-bold text-gray-900 text-lg">A.Y. Jackson Secondary School</h3>
+                    <span class="text-gray-500 italic">April 2025 – June 2025</span>
+                </div>
+                <p class="text-gray-600 italic mb-2">Asian Student Union Volunteer | Ottawa, ON</p>
+                <ul class="list-disc ml-5 space-y-1 text-gray-700">
+                    <li>Collaborated with a team to develop and deliver school-wide announcements.</li>
+                    <li>Developed public speaking skills and clear communication, essential for assisting apparel customers.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-8">
+            <h2 class="section-title text-lg">Education</h2>
+            <div class="job-header">
+                <h3 class="font-bold text-gray-900 text-lg">A.Y. Jackson Secondary School</h3>
+                <span class="text-gray-500 italic">Expected Graduation: June 2027</span>
+            </div>
+            <p class="text-gray-700">Ontario Secondary School Diploma (In Progress)</p>
+            <ul class="list-disc ml-5 mt-2 space-y-1 text-gray-700">
+                <li><strong>Awards:</strong> Canadian Computing Competition (Junior Division) - 2025; Canadian Intermediate Mathematics Contest - 2025.</li>
+            </ul>
+        </section>
+
+        <!-- Skills & Certifications -->
+        <section class="mb-8">
+            <h2 class="section-title text-lg">Skills & Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+                <ul class="list-disc ml-5 space-y-1">
+                    <li><strong>Languages:</strong> English (Fluent), French (Intermediate)</li>
+                    <li><strong>Certifications:</strong> First Aid & CPR Level C</li>
+                </ul>
+                <ul class="list-disc ml-5 space-y-1">
+                    <li><strong>Core Skills:</strong> Merchandising, Punctuality</li>
+                    <li><strong>Physical:</strong> Lift 50lbs, High Mobility</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Availability -->
+        <section>
+            <h2 class="section-title text-lg">Availability</h2>
+            <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <p class="text-gray-700"><strong>Weekends:</strong> Full Availability (Day/Evening)</p>
+                <p class="text-gray-700"><strong>Weekdays:</strong> Available after school hours and during school holidays</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="text-center text-gray-400 text-sm mt-8 pb-8">
+        &copy; 2026 Neil Stewart. Built for professional retail applications.
+    </footer>
+
+</body>
+</html>
